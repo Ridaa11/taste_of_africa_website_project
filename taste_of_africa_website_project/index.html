@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Tastes of Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="logo" href="index.html">Tastes of Africa</a>
+  <nav aria-label="Main"><ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="west-africa.html">Regions</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  <button id="theme-toggle" type="button" aria-label="Switch between light and dark mode">Dark mode</button>
+</header>
+<main id="main" class="">
+<section class="hero">
+  <div class="hero-text"><h1>Tastes of Africa</h1><p>From <mark>cassava-leaf isombe</mark> to sour injera, explore the flavours, ingredients and stories behind a continent's kitchens.</p><a class="btn" href="recipes.html">Browse recipes</a></div>
+  <!-- ADD YOUTUBE ID: replace YOUR_INTRODUCTION_TO_AFRICAN_FOOD_CULTURE_ID below with the code after v= in your YouTube link -->
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/1zyDUkdVZ0E?si=FaeiG7y9H2kjg3qt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe></div>
+</section>
+<section class="wrap"><h2>Featured dishes</h2><div class="grid"><article class="card" data-region="east-africa" data-id="isombe">
+  <figure><img src="images/isombe.jpg" alt="Isombe served in a traditional dish" loading="lazy" onerror="this.remove()"><figcaption>Isombe, Rwanda</figcaption></figure>
+  <div class="card-body"><h3>Isombe</h3><p>A Rwandan favourite of slow-cooked <mark>cassava leaves</mark> thickened with <mark>groundnut flour</mark> and palm oil, often served with plantain, rice or cassava.</p>
+  <div class="card-actions"><a class="btn" href="isombe.html">View recipe</a><button class="fav-btn" type="button" data-id="isombe" aria-pressed="false">&#10084; Favorite</button></div></div>
+</article><article class="card" data-region="west-africa" data-id="chicken-suya">
+  <figure><img src="images/suya.jpg" alt="Chicken Suya served in a traditional dish" loading="lazy" onerror="this.remove()"><figcaption>Chicken Suya, Nigeria</figcaption></figure>
+  <div class="card-body"><h3>Chicken Suya</h3><p>Thin-sliced chicken rubbed with <mark>yaji</mark>, a peanut and chili spice mix, then grilled on skewers. A Hausa street-food classic.</p>
+  <div class="card-actions"><a class="btn" href="chicken-suya.html">View recipe</a><button class="fav-btn" type="button" data-id="chicken-suya" aria-pressed="false">&#10084; Favorite</button></div></div>
+</article><article class="card" data-region="east-africa" data-id="injera">
+  <figure><img src="images/injera.jpg" alt="Injera served in a traditional dish" loading="lazy" onerror="this.remove()"><figcaption>Injera, Ethiopia</figcaption></figure>
+  <div class="card-body"><h3>Injera</h3><p>A spongy, sour flatbread made from <mark>teff</mark> and used as plate and spoon for stews like doro wat.</p>
+  <div class="card-actions"><a class="btn" href="injera.html">View recipe</a><button class="fav-btn" type="button" data-id="injera" aria-pressed="false">&#10084; Favorite</button></div></div>
+</article><article class="card" data-region="north-africa" data-id="lamb-tagine">
+  <figure><img src="images/tagine.jpg" alt="Lamb Tagine served in a traditional dish" loading="lazy" onerror="this.remove()"><figcaption>Lamb Tagine, Morocco</figcaption></figure>
+  <div class="card-body"><h3>Lamb Tagine</h3><p>Lamb slow-cooked with apricots and olives in a conical clay pot, scented with <mark>ras el hanout</mark> and preserved lemon.</p>
+  <div class="card-actions"><a class="btn" href="lamb-tagine.html">View recipe</a><button class="fav-btn" type="button" data-id="lamb-tagine" aria-pressed="false">&#10084; Favorite</button></div></div>
+</article></div></section>
+<section class="wrap"><h2>Explore by region</h2><ul class="region-list"><li><a href="west-africa.html"><strong>West Africa</strong><span>Rice, yam, cassava, plantain, millet</span></a></li><li><a href="east-africa.html"><strong>East Africa</strong><span>Teff, maize (ugali), lentils, plantain, coconut</span></a></li><li><a href="north-africa.html"><strong>North Africa</strong><span>Couscous, wheat, chickpeas, dates, olives</span></a></li></ul></section>
+<section class="wrap"><h2>Latest food trends</h2><div class="grid">
+<article class="news"><h3>Fonio is back on the menu</h3><p>This ancient West African grain is gaining fans worldwide as a gluten-free, quick-cooking <mark>supergrain</mark>.</p></article>
+<article class="news"><h3>Afro-fusion street food</h3><p>Chefs are pairing <mark>suya spice</mark> and <mark>berbere</mark> with tacos, burgers and pizza.</p></article>
+<article class="news"><h3>Sorghum and millet return</h3><p>Climate-hardy grains are moving from village fields into city restaurants and bakeries.</p></article></div></section>
+</main>
+<footer class="site-footer">
+  <p>Tastes of Africa. Celebrating the continent's food heritage.</p>
+  <form id="newsletter" novalidate>
+    <label for="nl-email">Get new recipes by email</label>
+    <input type="email" id="nl-email" placeholder="you@example.com" required>
+    <button type="submit">Sign up</button>
+    <p id="nl-msg" role="status"></p>
+  </form>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
