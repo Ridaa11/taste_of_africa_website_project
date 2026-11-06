@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Isombe | Tastes of Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="logo" href="index.html">Tastes of Africa</a>
+  <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="west-africa.html">Regions</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  <button id="theme-toggle" type="button" aria-label="Switch between light and dark mode">Dark mode</button>
+</header>
+<main id="main" class="">
+<article class="wrap recipe">
+<h1>Isombe</h1>
+<figure><img src="images/isombe.jpg" alt="Isombe served in a traditional dish" onerror="this.remove()"><figcaption>Isombe, Rwanda</figcaption></figure>
+<p class="lead">A Rwandan favourite of slow-cooked <mark>cassava leaves</mark> thickened with <mark>groundnut flour</mark> and palm oil, often served with plantain, rice or cassava.</p>
+<button class="fav-btn" type="button" data-id="isombe" aria-pressed="false">&#10084; Favorite</button>
+<section><h2>Ingredients</h2>
+<label for="servings">Servings</label> <input type="number" id="servings" value="4" min="1" max="20" data-base="4">
+<ul class="ingredients"><li><span class="ing" data-amt="500" data-unit="g">500 g</span> pounded cassava leaves</li><li><span class="ing" data-amt="1" data-unit="">1 </span> eggplant, diced</li><li><span class="ing" data-amt="1" data-unit="">1 </span> green bell pepper, chopped</li><li><span class="ing" data-amt="2" data-unit="">2 </span> onions, chopped</li><li><span class="ing" data-amt="3" data-unit="">3 </span> garlic cloves</li><li><span class="ing" data-amt="3" data-unit="tbsp">3 tbsp</span> groundnut (peanut) flour</li><li><span class="ing" data-amt="2" data-unit="tbsp">2 tbsp</span> palm oil</li><li><span class="ing" data-amt="3" data-unit="cups">3 cups</span> water</li><li><span class="ing" data-amt="1" data-unit="tsp">1 tsp</span> salt</li><li><span class="ing" data-amt="100" data-unit="g">100 g</span> dried fish (optional)</li></ul></section>
+<section><h2>Instructions</h2><details><summary>Step 1</summary><p>Wash and finely pound or blend fresh cassava leaves. If using frozen pounded leaves, thaw them first.</p></details><details><summary>Step 2</summary><p>Boil the leaves in water for at least 45 minutes. Cassava leaves must be cooked thoroughly.</p></details><details><summary>Step 3</summary><p>Add onions, garlic, eggplant, bell pepper and the dried fish if using. Cook 20 minutes.</p></details><details><summary>Step 4</summary><p>Mix the groundnut flour with a little water, then stir it in with the palm oil. <mark>Simmer</mark> 15 to 20 minutes until thick and creamy.</p></details><details><summary>Step 5</summary><p>Season with salt and serve hot with plantain, rice or ugali.</p></details></section>
+<section><h2>Video tutorial</h2><!-- ADD YOUTUBE ID: replace YOUR_HOW_TO_MAKE_ISOMBE_ID below with the code after v= in your YouTube link -->
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/eFt-j42yaRY?si=M9EyhKLQBahimGj_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></section>
+<section><h2>Nutrition per serving</h2><table><caption>Approximate values</caption><tbody><tr><th scope="row">Calories</th><td>220 kcal</td></tr><tr><th scope="row">Carbohydrates</th><td>18 g</td></tr><tr><th scope="row">Protein</th><td>9 g</td></tr><tr><th scope="row">Fat</th><td>13 g</td></tr></tbody></table></section>
+<section><h2>Where it comes from: Rwanda</h2><div class="map"><iframe src="https://www.google.com/maps?q=Kigali,+Rwanda&output=embed" title="Map of Rwanda" loading="lazy"></iframe></div></section>
+</article>
+</main>
+<footer class="site-footer">
+  <p>Tastes of Africa. Celebrating the continent's food heritage.</p>
+  <form id="newsletter" novalidate>
+    <label for="nl-email">Get new recipes by email</label>
+    <input type="email" id="nl-email" placeholder="you@example.com" required>
+    <button type="submit">Sign up</button>
+    <p id="nl-msg" role="status"></p>
+  </form>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
