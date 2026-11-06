@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Injera | Tastes of Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="logo" href="index.html">Tastes of Africa</a>
+  <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="west-africa.html">Regions</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  <button id="theme-toggle" type="button" aria-label="Switch between light and dark mode">Dark mode</button>
+</header>
+<main id="main" class="">
+<article class="wrap recipe">
+<h1>Injera</h1>
+<figure><img src="images/injera.jpg" alt="Injera served in a traditional dish" onerror="this.remove()"><figcaption>Injera, Ethiopia</figcaption></figure>
+<p class="lead">A spongy, sour flatbread made from <mark>teff</mark> and used as plate and spoon for stews like doro wat.</p>
+<button class="fav-btn" type="button" data-id="injera" aria-pressed="false">&#10084; Favorite</button>
+<section><h2>Ingredients</h2>
+<label for="servings">Servings</label> <input type="number" id="servings" value="4" min="1" max="20" data-base="4">
+<ul class="ingredients"><li><span class="ing" data-amt="3" data-unit="cups">3 cups</span> teff flour</li><li><span class="ing" data-amt="4" data-unit="cups">4 cups</span> water</li><li><span class="ing" data-amt="1" data-unit="tsp">1 tsp</span> salt</li></ul></section>
+<section><h2>Instructions</h2><details><summary>Step 1</summary><p>Whisk teff flour and water into a smooth batter.</p></details><details><summary>Step 2</summary><p>Cover and <mark>ferment</mark> at room temperature for 2 to 3 days until bubbly and sour.</p></details><details><summary>Step 3</summary><p>Stir in salt and thin the batter to a pourable consistency.</p></details><details><summary>Step 4</summary><p>Pour in a spiral onto a hot non-stick pan. Cover and cook 2 minutes, without flipping.</p></details><details><summary>Step 5</summary><p>Cool on a clean towel before stacking.</p></details></section>
+<section><h2>Video tutorial</h2><!-- ADD YOUTUBE ID: replace YOUR_HOW_TO_MAKE_INJERA_ID below with the code after v= in your YouTube link -->
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/VLDlO2CIMbQ?si=FnfA4UqN5zEgezD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></section>
+<section><h2>Nutrition per serving</h2><table><caption>Approximate values</caption><tbody><tr><th scope="row">Calories</th><td>160 kcal</td></tr><tr><th scope="row">Carbohydrates</th><td>32 g</td></tr><tr><th scope="row">Protein</th><td>5 g</td></tr><tr><th scope="row">Fat</th><td>1 g</td></tr></tbody></table></section>
+<section><h2>Where it comes from: Ethiopia</h2><div class="map"><iframe src="https://www.google.com/maps?q=Addis+Ababa,+Ethiopia&output=embed" title="Map of Ethiopia" loading="lazy"></iframe></div></section>
+</article>
+</main>
+<footer class="site-footer">
+  <p>Tastes of Africa. Celebrating the continent's food heritage.</p>
+  <form id="newsletter" novalidate>
+    <label for="nl-email">Get new recipes by email</label>
+    <input type="email" id="nl-email" placeholder="you@example.com" required>
+    <button type="submit">Sign up</button>
+    <p id="nl-msg" role="status"></p>
+  </form>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
