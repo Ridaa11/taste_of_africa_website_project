@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lamb Tagine | Tastes of Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="logo" href="index.html">Tastes of Africa</a>
+  <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="west-africa.html">Regions</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  <button id="theme-toggle" type="button" aria-label="Switch between light and dark mode">Dark mode</button>
+</header>
+<main id="main" class="">
+<article class="wrap recipe">
+<h1>Lamb Tagine</h1>
+<figure><img src="images/tagine.jpg" alt="Lamb Tagine served in a traditional dish" onerror="this.remove()"><figcaption>Lamb Tagine, Morocco</figcaption></figure>
+<p class="lead">Lamb slow-cooked with apricots and olives in a conical clay pot, scented with <mark>ras el hanout</mark> and preserved lemon.</p>
+<button class="fav-btn" type="button" data-id="lamb-tagine" aria-pressed="false">&#10084; Favorite</button>
+<section><h2>Ingredients</h2>
+<label for="servings">Servings</label> <input type="number" id="servings" value="4" min="1" max="20" data-base="4">
+<ul class="ingredients"><li><span class="ing" data-amt="1" data-unit="kg">1 kg</span> lamb shoulder, cubed</li><li><span class="ing" data-amt="2" data-unit="">2 </span> onions, sliced</li><li><span class="ing" data-amt="4" data-unit="">4 </span> garlic cloves</li><li><span class="ing" data-amt="2" data-unit="tbsp">2 tbsp</span> ras el hanout</li><li><span class="ing" data-amt="1" data-unit="tsp">1 tsp</span> ground ginger</li><li><span class="ing" data-amt="1" data-unit="">1 </span> preserved lemon</li><li><span class="ing" data-amt="0.5" data-unit="cup">0.5 cup</span> dried apricots</li><li><span class="ing" data-amt="0.5" data-unit="cup">0.5 cup</span> green olives</li><li><span class="ing" data-amt="2" data-unit="cups">2 cups</span> stock</li></ul></section>
+<section><h2>Instructions</h2><details><summary>Step 1</summary><p>Toss lamb with spices, garlic and a little oil. Rest 30 minutes.</p></details><details><summary>Step 2</summary><p>Layer onions in the tagine, then add the lamb and stock.</p></details><details><summary>Step 3</summary><p>Cook covered on low heat for 2 hours, until the lamb is tender.</p></details><details><summary>Step 4</summary><p>Add apricots, olives and preserved lemon. Simmer 20 minutes uncovered.</p></details><details><summary>Step 5</summary><p>Serve with couscous or crusty bread.</p></details></section>
+<section><h2>Video tutorial</h2><!-- ADD YOUTUBE ID: replace YOUR_HOW_TO_MAKE_LAMB_TAGINE_ID below with the code after v= in your YouTube link -->
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/UYCECYMp8_4?si=8wyGrXysIxZL043E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></section>
+<section><h2>Nutrition per serving</h2><table><caption>Approximate values</caption><tbody><tr><th scope="row">Calories</th><td>510 kcal</td></tr><tr><th scope="row">Carbohydrates</th><td>24 g</td></tr><tr><th scope="row">Protein</th><td>38 g</td></tr><tr><th scope="row">Fat</th><td>29 g</td></tr></tbody></table></section>
+<section><h2>Where it comes from: Morocco</h2><div class="map"><iframe src="https://www.google.com/maps?q=Marrakech,+Morocco&output=embed" title="Map of Morocco" loading="lazy"></iframe></div></section>
+</article>
+</main>
+<footer class="site-footer">
+  <p>Tastes of Africa. Celebrating the continent's food heritage.</p>
+  <form id="newsletter" novalidate>
+    <label for="nl-email">Get new recipes by email</label>
+    <input type="email" id="nl-email" placeholder="you@example.com" required>
+    <button type="submit">Sign up</button>
+    <p id="nl-msg" role="status"></p>
+  </form>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
