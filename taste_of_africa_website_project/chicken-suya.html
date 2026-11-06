@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chicken Suya | Tastes of Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="logo" href="index.html">Tastes of Africa</a>
+  <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="west-africa.html">Regions</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  <button id="theme-toggle" type="button" aria-label="Switch between light and dark mode">Dark mode</button>
+</header>
+<main id="main" class="">
+<article class="wrap recipe">
+<h1>Chicken Suya</h1>
+<figure><img src="images/suya.jpg" alt="Chicken Suya served in a traditional dish" onerror="this.remove()"><figcaption>Chicken Suya, Nigeria</figcaption></figure>
+<p class="lead">Thin-sliced chicken rubbed with <mark>yaji</mark>, a peanut and chili spice mix, then grilled on skewers. A Hausa street-food classic.</p>
+<button class="fav-btn" type="button" data-id="chicken-suya" aria-pressed="false">&#10084; Favorite</button>
+<section><h2>Ingredients</h2>
+<label for="servings">Servings</label> <input type="number" id="servings" value="4" min="1" max="20" data-base="4">
+<ul class="ingredients"><li><span class="ing" data-amt="600" data-unit="g">600 g</span> chicken breast, thinly sliced</li><li><span class="ing" data-amt="0.5" data-unit="cup">0.5 cup</span> roasted groundnut (peanut) powder</li><li><span class="ing" data-amt="2" data-unit="tsp">2 tsp</span> ground ginger</li><li><span class="ing" data-amt="2" data-unit="tsp">2 tsp</span> paprika</li><li><span class="ing" data-amt="1" data-unit="tsp">1 tsp</span> cayenne pepper</li><li><span class="ing" data-amt="1" data-unit="tsp">1 tsp</span> garlic powder</li><li><span class="ing" data-amt="1" data-unit="tsp">1 tsp</span> onion powder</li><li><span class="ing" data-amt="1" data-unit="tsp">1 tsp</span> salt</li><li><span class="ing" data-amt="3" data-unit="tbsp">3 tbsp</span> vegetable oil</li><li><span class="ing" data-amt="1" data-unit="">1 </span> red onion, sliced, to serve</li></ul></section>
+<section><h2>Instructions</h2><details><summary>Step 1</summary><p>Mix the groundnut powder, ginger, paprika, cayenne, garlic, onion powder and salt into the <mark>yaji</mark> spice.</p></details><details><summary>Step 2</summary><p>Coat the chicken with oil, then with most of the yaji. Marinate 2 hours.</p></details><details><summary>Step 3</summary><p>Thread the chicken onto skewers.</p></details><details><summary>Step 4</summary><p>Grill over high heat for 10 to 12 minutes, turning often, until cooked through and charred at the edges.</p></details><details><summary>Step 5</summary><p>Dust with the remaining yaji and serve with sliced onion, tomato and lime.</p></details></section>
+<section><h2>Video tutorial</h2><!-- ADD YOUTUBE ID: replace YOUR_HOW_TO_MAKE_CHICKEN_SUYA_ID below with the code after v= in your YouTube link -->
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/fNeV7B172mg?si=pDwq2YEqRW-tVlLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></section>
+<section><h2>Nutrition per serving</h2><table><caption>Approximate values</caption><tbody><tr><th scope="row">Calories</th><td>310 kcal</td></tr><tr><th scope="row">Carbohydrates</th><td>6 g</td></tr><tr><th scope="row">Protein</th><td>36 g</td></tr><tr><th scope="row">Fat</th><td>15 g</td></tr></tbody></table></section>
+<section><h2>Where it comes from: Nigeria</h2><div class="map"><iframe src="https://www.google.com/maps?q=Kaduna,+Nigeria&output=embed" title="Map of Nigeria" loading="lazy"></iframe></div></section>
+</article>
+</main>
+<footer class="site-footer">
+  <p>Tastes of Africa. Celebrating the continent's food heritage.</p>
+  <form id="newsletter" novalidate>
+    <label for="nl-email">Get new recipes by email</label>
+    <input type="email" id="nl-email" placeholder="you@example.com" required>
+    <button type="submit">Sign up</button>
+    <p id="nl-msg" role="status"></p>
+  </form>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
